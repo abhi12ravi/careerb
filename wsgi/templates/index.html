@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block content %}
+
+<h2> Welcome to My notes</h2>
+<hr>
+{% for note in notes %}
+  <p>  
+    <b>{{ note.name }}</b> <br>  
+    Author: {{ note.author }} <br><br>  
+    {{ note.content }}  
+  </p>  
+  <hr>  
+  {% endfor %}
+{% endblock %}
